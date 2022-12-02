@@ -1,0 +1,34 @@
+.section-1 {
+    background-image: url("../images/banner1.png");
+    background-size: cover;
+    height: 100vh;
+    // width: 100%;
+    background-position: center;
+    position: relative;
+
+    .hero-content {
+        position: absolute;
+        color: #fff;
+        bottom: 50px;
+        width: 493px;
+        height: auto;
+        p {
+            font-family: "Cormorant", serif;
+            @include font-rem(26px, 37px);
+        }
+        h2 {
+            font-family: "Poppins", sans-serif;
+            @include font-rem(60px, 68px);
+        }
+    }
+
+    &:after {
+        background: rgba(0, 0, 0, 0.16);
+        content: "";
+        height: 100%;
+        width: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+}

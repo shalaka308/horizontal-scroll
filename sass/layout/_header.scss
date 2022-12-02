@@ -1,0 +1,156 @@
+header {
+    height: 6rem;
+    background-color: transparent;
+    // box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    @include bp(tablet-sm) {
+        position: fixed;
+        z-index: 3;
+    }
+
+    /*Styling logo*/
+    .logo {
+        padding: 1vh 1vw;
+        text-align: center;
+    }
+
+    /*Styling Links*/
+    .nav-links {
+        display: flex;
+        list-style: none;
+        width: 88vw;
+        padding: 0 0.7vw;
+        justify-content: space-evenly;
+        align-items: center;
+        text-transform: uppercase;
+        li {
+            position: relative;
+            @include bp(tablet-sm) {
+                opacity: 0;
+            }
+
+            &:nth-child(1) {
+                @include bp(tablet-sm) {
+                    transition: all 0.5s ease 0.2s;
+                }
+            }
+
+            &:nth-child(2) {
+                @include bp(tablet-sm) {
+                    transition: all 0.5s ease 0.4s;
+                }
+            }
+            &:nth-child(3) {
+                @include bp(tablet-sm) {
+                    transition: all 0.5s ease 0.6s;
+                }
+            }
+            &:nth-child(4) {
+                @include bp(tablet-sm) {
+                    transition: all 0.5s ease 0.7s;
+                }
+            }
+            &:nth-child(5) {
+                @include bp(tablet-sm) {
+                    transition: all 0.5s ease 0.8s;
+                }
+            }
+            &:nth-child(6) {
+                @include bp(tablet-sm) {
+                    transition: all 0.5s ease 0.9s;
+                    margin: 0;
+                }
+            }
+            &:nth-child(7) {
+                @include bp(tablet-sm) {
+                    transition: all 0.5s ease 1s;
+                    margin: 0;
+                }
+            }
+
+            &.fade {
+                opacity: 1;
+            }
+            a {
+                text-decoration: none;
+                color: #fff;
+                text-transform: capitalize;
+                &:hover {
+                    color: #61dafb;
+                }
+                &::before {
+                    content: "";
+                    display: block;
+                    height: 3px;
+                    width: 0%;
+                    background-color: #61dafb;
+                    position: absolute;
+                    transition: all ease-in-out 250ms;
+                    margin: 0 0 0 10%;
+                }
+                &:hover::before {
+                    width: 80%;
+                }
+            }
+        }
+
+        @include bp(tablet-sm) {
+            position: fixed;
+            background: #131418;
+            height: 100vh;
+            width: 100%;
+            flex-direction: column;
+            clip-path: circle(50px at 90% -20%);
+            -webkit-clip-path: circle(50px at 90% -10%);
+            transition: all 1s ease-out;
+            pointer-events: none;
+        }
+
+        &.open {
+            @include bp(tablet-sm) {
+                clip-path: circle(1000px at 90% -10%);
+                -webkit-clip-path: circle(1000px at 90% -10%);
+                pointer-events: all;
+            }
+        }
+    }
+    /*Styling Hamburger Icon*/
+    .hamburger {
+        display: none;
+        div {
+            width: 30px;
+            height: 3px;
+            background: #f2f5f7;
+            margin: 5px;
+            transition: all 0.3s ease;
+        }
+        @include bp(tablet-sm) {
+            display: block;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 50%;
+            transform: translate(-5%, -50%);
+            z-index: 2;
+            transition: all 0.7s ease;
+        }
+    }
+
+    .toggle {
+        .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+
+        .line2 {
+            transition: all 0.7s ease;
+            width: 0;
+        }
+
+        .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+}
