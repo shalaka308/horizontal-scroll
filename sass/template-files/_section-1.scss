@@ -9,17 +9,30 @@
     .hero-content {
         position: absolute;
         color: #fff;
-        bottom: 50px;
+        // bottom: 50px;
         width: 493px;
         height: auto;
         text-align: left;
         p {
             font-family: "Cormorant", serif;
             @include font-rem(26px, 37px);
+            @include bp(tablet-sm) {
+                @include font-rem(20px, 38px);
+            }
         }
         h2 {
             font-family: "Poppins", sans-serif;
             @include font-rem(60px, 68px);
+            @include bp(tablet-sm) {
+                @include font-rem(50px, 58px);
+            }
+        }
+
+        @include bp(tablet-sm) {
+            width: 100%;
+            position: absolute;
+            padding: 42px;
+            bottom: 0;
         }
     }
 
@@ -31,5 +44,13 @@
         left: 0;
         top: 0;
         position: absolute;
+    }
+
+    @include bp(tablet-sm) {
+        background-size: cover;
+        height: 100vh;
+        background-position: center;
+        position: relative;
+        background-position: 68% 0;
     }
 }

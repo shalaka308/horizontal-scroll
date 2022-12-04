@@ -39,9 +39,14 @@
                             <li><a href="#">Contact</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Careers</a></li>
-                            <li><button class="btn btn-tran" href="#">Book A meeting</button></li>
+                            <div class="desktop-only">
+                                <li><button class="btn btn-tran" href="#">Book A meeting</button></li>
+                            </div>
                         </ul>
                     </nav>
+                    <div class="mobile-only">
+                        <li><button class="btn btn-tran" href="#">Book A meeting</button></li>
+                    </div>
                 </div>
 
             </div>

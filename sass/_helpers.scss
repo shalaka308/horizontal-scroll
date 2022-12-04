@@ -160,7 +160,7 @@
     }
 }
 
-.tablet-only {
+.mobile-only {
     display: none;
 
     @include bp(tablet-sm) {
@@ -180,4 +180,8 @@
     position: relative;
     box-sizing: border-box;
     padding: 0;
+
+    @include bp(tablet-sm) {
+        display: block;
+    }
 }

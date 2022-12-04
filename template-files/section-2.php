@@ -2,7 +2,7 @@
     <div class="sect2-left-wrap">
         <div class="container">
             <div class="row">
-                <div class="col-md-4 offset-md-4">
+                <div class="col-lg-4 offset-md-4  col-sm-12">
                     <div class="section2-content">
                         <h3>Building a lasting legacy
                             for individuals, families and businesses globally</h3>
@@ -14,7 +14,8 @@
                     <img src="images/banner2-left.png">
                 </div>
                 <div class="sect2-center-img">
-                    <img src="images/banner2-center.png">
+                    <img class="desktop-only" src="images/banner2-center.png">
+                    <img class="mobile-only" src="images/banner2-center-m.png">
                 </div>
                 <div class="sect2-right-img">
                     <img src="images/banner2-right.png">

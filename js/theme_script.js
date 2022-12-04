@@ -16,27 +16,33 @@ $(document).ready(function () {
     });
 
 
-    //
 
-    let sections = gsap.utils.toArray(".panel");
+    if (window.matchMedia('(min-width: 990px)').matches) {
+        //scroll
+        let sections = gsap.utils.toArray(".panel");
 
-    gsap.to(sections, {
-        xPercent: -100 * (sections.length - 1),
-        ease: "none",
-        scrollTrigger: {
-            trigger: ".front-page",
-            pin: true,
-            scrub: 1,
-            snap: 1 / (sections.length - 1),
-            end: () => "+=" + document.querySelector(".front-page").offsetWidth
-        }
-    });
+        gsap.to(sections, {
+            xPercent: -100 * (sections.length - 1),
+            ease: "none",
+            scrollTrigger: {
+                trigger: ".front-page",
+                pin: true,
+                scrub: 1,
+                snap: 1 / (sections.length - 1),
+                end: () => "+=" + document.querySelector(".front-page").offsetWidth
+            }
+        });
+
+        // Start midnight
+        $(document).ready(function () {
+            // Change this to the correct selector.
+            $('header').midnight();
+        });
+
+    }
 
 
-    // Start midnight
-    $(document).ready(function () {
-        // Change this to the correct selector.
-        $('header').midnight();
-    });
+
+
 
 });

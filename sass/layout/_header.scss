@@ -10,6 +10,8 @@ header {
     @include bp(tablet-sm) {
         position: fixed;
         z-index: 3;
+        // height: 177px;
+        background: #61dafb;
     }
 
     /*Styling logo*/

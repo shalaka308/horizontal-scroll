@@ -20,8 +20,12 @@
 
                 </div>
             </div>
-            <div class="section2-image">
+            <div class="section3-image">
                 <img src="images/banner3.png">
+            </div>
+            <div class="bottom-text">
+                <p class="round-btn"> Make Enquiry</p>
+                <h3> Diversifying for a more secure future</h3>
             </div>
         </div>
     </div>

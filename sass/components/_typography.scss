@@ -32,6 +32,9 @@ html {
 body {
   overscroll-behavior: none;
   height: 100vh;
+  @include bp(tablet-sm) {
+    height: 100%;
+  }
 }
 .front-page {
   overscroll-behavior: none;
@@ -39,6 +42,10 @@ body {
   height: 100%;
   display: flex;
   flex-wrap: nowrap;
+  @include bp(tablet-sm) {
+    width: 100%;
+    display: block;
+  }
 }
 
 body {
