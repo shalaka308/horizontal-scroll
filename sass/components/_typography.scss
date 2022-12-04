@@ -123,11 +123,11 @@ h3,
 
 h4,
 .h4 {
-  @include font-rem(26px, 34px);
+  @include font-rem(30px, 38px);
   font-weight: 700;
 
   @include bp(tablet-sm) {
-    @include font-rem(20px, 26px);
+    @include font-rem(28px, 38px);
   }
 }
 

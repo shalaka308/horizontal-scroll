@@ -3,14 +3,14 @@
 //  ==========================================================================
 
 .btn {
-    padding: 16px 35px 16px 35px;
-    @include font-rem(14px, 19px);
+    padding: 4px 15px;
+    @include font-rem(15px, 24px);
     font-family: $baseFontFamily;
     text-transform: capitalize;
-    border-radius: 28px;
-    background-color: color(white);
+    border-radius: 0;
+    background-color: transparent;
     color: color(white);
-    // border: 2px solid color(navy-blue);
+    border: 1px solid color(white);
     // height: 40px;
     // width: 183px;
     display: inline-flex;

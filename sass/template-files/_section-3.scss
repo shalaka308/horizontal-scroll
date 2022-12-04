@@ -1,0 +1,53 @@
+.section-3 {
+    background-color: color(tt_green);
+    position: relative;
+
+    .section3-title {
+    }
+
+    .section3-menu {
+        ul {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            padding-top: 27px;
+
+            li {
+                padding: 0 20px;
+                @include font-rem(16px, 19px);
+            }
+        }
+    }
+
+    .section3-heading {
+        h2 {
+            font-family: "Cormorant", serif;
+            @include font-rem(150px, 158px);
+            text-transform: capitalize;
+
+            &.head-top {
+                text-align: right;
+            }
+            &.head-bottom {
+                text-align: left;
+                position: relative;
+                left: -20px;
+            }
+        }
+    }
+
+    .section2-image {
+        position: absolute;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        top: 59%;
+        img {
+            width: auto;
+            height: 350px;
+            transform: rotate(7.42deg);
+        }
+    }
+}

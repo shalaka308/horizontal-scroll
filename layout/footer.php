@@ -11,7 +11,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/ScrollTrigger.min.js"></script>
-    <script src="js/minified/card.min.js"></script>
+    <script src="js/minified/midnight.jquery.min.js"></script>
     <script src="js/minified/theme_script.min.js"></script>
     </body>
 

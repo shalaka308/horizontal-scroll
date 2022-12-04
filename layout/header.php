@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="col-lg-2">
                     <div class="logo">
-                        <img src="images/title.png">
+                        Logo
                     </div>
                 </div>
                 <div class="col-lg-10">
