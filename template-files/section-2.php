@@ -1,4 +1,4 @@
-<section data-midnight="white" class="panel section-2 " id="section-2">
+<section data-midnight="black" class="panel section-2 " id="section-2">
     <div class="sect2-left-wrap">
         <div class="container">
             <div class="row">

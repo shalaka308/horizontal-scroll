@@ -28,7 +28,12 @@ $(document).ready(function () {
                 trigger: ".front-page",
                 pin: true,
                 scrub: 1,
-                snap: 1 / (sections.length - 1),
+                snap: {
+                    snapTo: 1 / (sections.length - 1),
+                    duration: 0.1,
+                    delay: 0.1,
+                    ease: "power1.inOut"
+                },
                 end: () => "+=" + document.querySelector(".front-page").offsetWidth
             }
         });

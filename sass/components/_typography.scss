@@ -134,7 +134,7 @@ h4,
   font-weight: 700;
 
   @include bp(tablet-sm) {
-    @include font-rem(28px, 38px);
+    @include font-rem(20px, 27px);
   }
 }
 

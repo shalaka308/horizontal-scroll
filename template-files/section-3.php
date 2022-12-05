@@ -24,8 +24,8 @@
                 <img src="images/banner3.png">
             </div>
             <div class="bottom-text">
-                <p class="round-btn"> Make Enquiry</p>
-                <h3> Diversifying for a more secure future</h3>
+                <p class="btn round-btn"> Make<br>Enquiry</p>
+                <h4> Diversifying for a more secure future</h4>
             </div>
         </div>
     </div>

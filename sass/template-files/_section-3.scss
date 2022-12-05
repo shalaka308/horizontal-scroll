@@ -35,7 +35,7 @@
                 text-align: right;
                 @include bp(tablet-sm) {
                     text-align: center;
-                    padding-top: 90px;
+                    padding-top: 166px;
                 }
             }
             &.head-bottom {
@@ -44,14 +44,18 @@
                 left: -20px;
                 @include bp(tablet-sm) {
                     text-align: center;
-                    left: 0;
+                    left: -300px;
                 }
             }
             @include bp(tablet-sm) {
-                @include font-rem(77px, 83px);
+                @include font-rem(100px, 110px);
             }
         }
         @include bp(tablet-sm) {
+            width: 100%;
+            white-space: nowrap;
+            position: relative;
+            left: 0;
         }
     }
 
@@ -69,8 +73,7 @@
             }
         }
         @include bp(tablet-sm) {
-            top: auto;
-            bottom: 212px;
+            top: 32%;
         }
     }
 
@@ -78,8 +81,31 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin: 0 auto;
+        padding-top: 160px;
+        @include bp(tablet-sm) {
+            padding-top: 30px;
+        }
+
+        h4 {
+            margin-left: 88px;
+        }
     }
     @include bp(tablet-sm) {
         padding: 70px 15px;
+    }
+    &::before {
+        position: absolute;
+        content: url("../images/Vector.png");
+        left: 19%;
+        top: 0;
+        height: 921px;
+        z-index: -1;
+        @include bp(tablet-sm) {
+            content: url("../images/Vector-m.svg");
+            height: auto;
+            z-index: 0;
+            left: 0;
+        }
     }
 }

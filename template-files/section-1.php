@@ -1,4 +1,4 @@
-<section data-midnight="default" class="panel section-1" id="section-1">
+<section class="panel section-1" id="section-1">
     <div class="container">
         <div class="row">
             <div class="">

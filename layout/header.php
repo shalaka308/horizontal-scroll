@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <header>
+    <header data-midnight="deafult">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
