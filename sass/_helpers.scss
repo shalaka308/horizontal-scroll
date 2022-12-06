@@ -183,5 +183,6 @@
 
     @include bp(tablet-sm) {
         display: block;
+        overflow: hidden;
     }
 }

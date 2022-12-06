@@ -11,14 +11,13 @@ header {
         position: fixed;
         z-index: 3;
         // height: 177px;
-        background: #61dafb;
+        width: 100%;
     }
 
     /*Styling logo*/
     .logo {
         font-size: 50px;
-        padding: 20px 0;
-        text-align: center;
+        line-height: 65px;
         font-weight: bold;
         color: #fff;
     }
@@ -28,10 +27,11 @@ header {
         display: flex;
         list-style: none;
         // width: 88vw;
-        padding: 20px 0;
         justify-content: space-evenly;
         align-items: center;
         text-transform: uppercase;
+        margin-bottom: 0;
+        padding: 20px 0;
         li {
             position: relative;
             @include bp(tablet-sm) {
@@ -113,6 +113,7 @@ header {
             -webkit-clip-path: circle(50px at 90% -10%);
             transition: all 1s ease-out;
             pointer-events: none;
+            left: 0;
         }
 
         &.open {
@@ -124,6 +125,14 @@ header {
         }
     }
     /*Styling Hamburger Icon*/
+
+    .mob-nav {
+        @include bp(tablet-sm) {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+    }
     .hamburger {
         display: none;
         div {
@@ -137,7 +146,7 @@ header {
             display: block;
             position: absolute;
             cursor: pointer;
-            right: 5%;
+            right: 0;
             top: 50%;
             transform: translate(-5%, -50%);
             z-index: 2;
@@ -167,17 +176,21 @@ header {
 
     .midnightHeader.black {
         color: #131418;
+        a,
+        .logo {
+            color: #131418;
+        }
     }
-    // .midnightHeader.white {
-    //     background: transparent;
-    //     color: black;
-    //     li {
-    //         a {
-    //             color: #000;
-    //         }
-    //     }
-    //     .logo {
-    //         color: #000;
-    //     }
-    // }
+    .midnightHeader.white {
+        background: transparent;
+        color: black;
+        li {
+            a {
+                color: #000;
+            }
+        }
+        .logo {
+            color: #000;
+        }
+    }
 }

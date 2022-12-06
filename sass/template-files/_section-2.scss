@@ -74,7 +74,7 @@
         .sect2-right-img {
             position: absolute;
             right: 20px;
-            top: 10%;
+            top: 32%;
             transform: translate(0%, -50%);
             z-index: 3;
             img {
@@ -116,13 +116,18 @@
     }
 
     .bg-text {
-        @include font-rem(236px, 240px);
+        @include font-rem(323px, 240px);
         width: 100%;
         position: absolute;
         z-index: 1;
         left: -60px;
-        bottom: 155px;
+        bottom: 260px;
+        mix-blend-mode: difference;
+        @include bp(desktop-sm) {
+            @include font-rem(236px, 240px);
+        }
         @include bp(tablet-sm) {
+            mix-blend-mode: none;
             @include font-rem(92px, 76px);
             width: 100%;
             position: absolute;

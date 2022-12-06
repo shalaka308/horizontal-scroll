@@ -3,6 +3,7 @@
     position: relative;
 
     .section3-title {
+        padding-top: 24%;
     }
 
     .section3-menu {
@@ -73,7 +74,7 @@
             }
         }
         @include bp(tablet-sm) {
-            top: 32%;
+            top: 37%;
         }
     }
 
@@ -83,12 +84,16 @@
         justify-content: center;
         margin: 0 auto;
         padding-top: 160px;
+        padding-bottom: 75px;
         @include bp(tablet-sm) {
             padding-top: 30px;
         }
 
         h4 {
             margin-left: 88px;
+            @include bp(tablet-sm) {
+                margin-left: 0;
+            }
         }
     }
     @include bp(tablet-sm) {

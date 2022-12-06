@@ -7,10 +7,8 @@
     @include font-rem(15px, 24px);
     font-family: $baseFontFamily;
     text-transform: capitalize;
-    border-radius: 0;
     background-color: transparent;
-    color: color(white);
-    border: 1px solid color(white);
+
     // height: 40px;
     // width: 183px;
     display: inline-flex;
@@ -23,6 +21,12 @@
     span {
         position: relative;
         // mix-blend-mode: difference;
+    }
+
+    &.btn-tran {
+        border-radius: 0;
+        color: color(white);
+        border: 1px solid #fff;
     }
 
     &::before {
@@ -51,5 +55,12 @@
         @include font-rem(16px, 22px);
         width: 121px;
         height: 121px;
+
+        @include bp(tablet-sm) {
+            width: 135px;
+            height: 95px;
+            display: flex;
+            align-items: center;
+        }
     }
 }

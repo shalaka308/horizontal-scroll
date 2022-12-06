@@ -55,7 +55,7 @@
       @content;
     }
   } @else if $query==desktop-sm {
-    @media (max-width: 1200px) {
+    @media (max-width: 1280px) {
       @content;
     }
   } @else if $query==tablet-md {
