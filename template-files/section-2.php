@@ -14,6 +14,7 @@
                     <img src="images/banner2-left.png">
                 </div>
                 <div class="sect2-center-img">
+
                     <img class="desktop-only" src="images/banner2-center.png">
                     <img class="mobile-only" src="images/banner2-center-m.png">
                 </div>

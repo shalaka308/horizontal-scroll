@@ -55,10 +55,12 @@
         @include font-rem(16px, 22px);
         width: 121px;
         height: 121px;
+        color: #fff;
+        display: flex;
 
         @include bp(tablet-sm) {
             width: 135px;
-            height: 95px;
+            height: 135px;
             display: flex;
             align-items: center;
         }

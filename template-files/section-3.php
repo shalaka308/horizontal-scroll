@@ -1,4 +1,4 @@
-<section class="panel section-3" id="section-3">
+<section data-midnight="default" class="panel section-3" id="section-3">
     <div class="container-fluid">
         <div class="row">
             <div class="col-lg-12">
@@ -14,17 +14,24 @@
                         <li> Contact</li>
                     </ul>
                 </div>
+                <div class="section3-image mobile-only">
+                    <img src="images/banner3.png">
+                    <div class="sect3-btn mobile-only">
+                        <p class="btn round-btn "> Make<br>Enquiry</p>
+                    </div>
+                </div>
                 <div class="section3-heading">
                     <h2 class="head-top">Diversifying for</h2>
                     <h2 class="head-bottom">more secure future</h2>
 
                 </div>
             </div>
-            <div class="section3-image">
+            <div class="section3-image desktop-only">
                 <img src="images/banner3.png">
+
             </div>
-            <div class="bottom-text">
-                <p class="btn round-btn"> Make<br>Enquiry</p>
+            <div class="bottom-text desktop-only">
+                <p class="btn round-btn "> Make<br>Enquiry</p>
                 <h4> Diversifying for a more secure future</h4>
             </div>
         </div>
